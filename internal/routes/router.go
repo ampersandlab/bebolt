@@ -8,12 +8,12 @@ import (
 
 type Router struct {
 	Bunrouter *bunrouter.Router
-	app       *internal.App
+	App       *internal.App
 }
 
 func NewRouter(app *internal.App) *Router {
 	return &Router{
-		app: app,
+		App: app,
 		Bunrouter: bunrouter.New(
 			bunrouter.Use(reqlog.NewMiddleware(
 				reqlog.WithVerbose(false),

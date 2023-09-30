@@ -9,7 +9,7 @@ import (
 
 func main() {
 	fx.New(
-		fx.Provide(cmd.NewServer),
+		fx.Provide(cmd.CreateServer),
 		fx.Invoke(func(*http.Server) {}),
 	).Run()
 }

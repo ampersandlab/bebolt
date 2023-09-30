@@ -15,7 +15,7 @@ import (
 	"go.uber.org/fx"
 )
 
-func NewServer(lc fx.Lifecycle) *http.Server {
+func CreateServer(lc fx.Lifecycle) *http.Server {
 	app := internal.NewApp()
 	router := routes.NewRouter(app)
 	router.SetWebRoutes()
