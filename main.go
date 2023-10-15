@@ -3,7 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/ampersandlab/bebolt/cmd"
+	cmd "github.com/ampersandlab/bebolt/cmd/http"
+
 	"go.uber.org/fx"
 )
 

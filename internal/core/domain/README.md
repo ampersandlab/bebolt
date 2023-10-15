@@ -1,0 +1,1 @@
+Domain contains models/entities representing core business concepts.

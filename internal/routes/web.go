@@ -1,12 +1,12 @@
 package routes
 
 import (
-	"github.com/ampersandlab/bebolt/internal/actions/examples"
+	http "github.com/ampersandlab/bebolt/internal/adapter/http"
 )
 
 func (r *Router) SetWebRoutes() {
 	//web routes go here
-	ea := examples.NewExampleAction(r.App)
+	action := http.NewAction(r.App)
 
-	r.Bunrouter.GET("/", ea.WelcomeHandler)
+	r.Bunrouter.GET("/", action.WelcomeHandler)
 }

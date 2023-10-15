@@ -1,0 +1,1 @@
+port contains defined interfaces that adapters must follow

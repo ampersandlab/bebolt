@@ -38,6 +38,7 @@ func NewDatabaseConnection(env *config.Env) *Database {
 		if err != nil {
 			panic("Unable to set db connection.")
 		}
+
 		sqlDB, err := conn.DB()
 		if err != nil {
 			panic("Unable to get database")
